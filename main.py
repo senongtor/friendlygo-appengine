@@ -22,7 +22,8 @@ class MainPage(webapp2.RequestHandler):
         # http://localhost:8080/fbId0=10153589934097337
         # appcfg.py update .
 
-        # Facebook recommends 1200 x 630 pixels for the og:image dimensions
+        # Facebook recommends 1200 x 630 pixels for the og:image dimensions,
+        # but I chose 952x500 (always keep this aspect-ratio! That ratio is assumed in the platform when showing the game-over "printscreen" for FB sharing.)
         img_w = 952
         img_h = 500
         # Board is 400x400, at center of img.
